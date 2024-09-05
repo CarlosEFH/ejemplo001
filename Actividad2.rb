@@ -24,6 +24,12 @@ class Padre
         puts "#{palabra}: #{frecuencia}" if frecuencia > 1
       end
     end
+
+    def actualizar_texto(nuevo_texto)
+        @texto = nuevo_texto
+      end
+
+    
   end
   
   texto = "hola mis estimados buenos dias hola mundo como es el mundo de estimados"
@@ -32,3 +38,5 @@ class Padre
 
   contador.imprimir_palabras_repetidas
   
+contador.actualizar_texto("ayuda ayuda ayuda, se se se se se, están están, repitiendo las las las palabras")
+contador.imprimir_palabras_repetidas
