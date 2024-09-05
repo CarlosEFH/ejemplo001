@@ -19,10 +19,14 @@ class Padre
     def imprimir_palabras_repetidas
       puts "Estas palabras se están repitiendo:"
       palabras_contadas = contar_palabras
+      
   
       palabras_contadas.each do |palabra, frecuencia|
         puts "#{palabra}: #{frecuencia}" if frecuencia > 1
       end
+    end
+    def to_s
+      "metodo To_s '#{@texto}'"
     end
   end
   
@@ -31,4 +35,4 @@ class Padre
   
 
   contador.imprimir_palabras_repetidas
-  
+  puts contador.to_s
