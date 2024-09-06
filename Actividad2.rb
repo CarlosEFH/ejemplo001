@@ -25,6 +25,10 @@ class Padre
         puts "#{palabra}: #{frecuencia}" if frecuencia > 1
       end
     end
+    def actualizar_texto(nuevo_texto)
+      @texto = nuevo_texto
+    end
+
     def to_s
       "metodo To_s '#{@texto}'"
     end
@@ -33,6 +37,9 @@ class Padre
   texto = "hola mis estimados buenos dias hola mundo como es el mundo de estimados"
   contador = Padre.new(texto)
   
+  
+  contador.actualizar_texto("ayuda ayuda ayuda, se se se se se, están están, repitiendo las las las palabras")
+  contador.imprimir_palabras_repetidas
 
   contador.imprimir_palabras_repetidas
   puts contador.to_s
